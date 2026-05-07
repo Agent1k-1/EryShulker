@@ -1,0 +1,4 @@
+messages:
+  reload-config: "&aПлагин успешно перезагружен ошибок нет"
+  error-permission: "&cНет прав"
+  shulker-limit: "&fВы достигли &6лимита &cшалкеров"
