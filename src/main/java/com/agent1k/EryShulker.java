@@ -29,6 +29,13 @@ public final class EryShulker extends JavaPlugin {
         this.shulkerLimitManager = new ShulkerLimitManager(configs, messageConfig);
         registerListeners();
         registerCommands();
+
+        int pluginId = 32019;
+        Metrics metrics = new Metrics(this, pluginId);
+        metrics.addCustomChart(
+                new Metrics.SimplePie("chart_id", () -> "My value")
+        );
+
     }
 
     private void registerListeners() {
